@@ -1,0 +1,13 @@
+name: R-Shiny
+title: R-Shiny
+username:
+account: sgnajar
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 557928
+bundleId: 1687446
+url: https://sgnajar.shinyapps.io/R-Shiny/
+when: 1541600995.12951
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .gitattributes|.RData|random-shinyApp.R|rShinyApp.R|.idea/modules.xml|.idea/Rshinyapp.iml|.idea/workspace.xml
