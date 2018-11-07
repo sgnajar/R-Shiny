@@ -23,7 +23,7 @@ ui <- fluidPage(
   actionButton(inputId = "unif",
                label = "Uniform"),
   
-  plotOutput("hist"),
+  column(8, plotOutput("hist")),
   verbatimTextOutput("stats")
   
 )
@@ -42,7 +42,7 @@ server <- function (input, output) {
   
   output$hist <- renderPlot({
     hist(rv$data,
-  
+
     main = isolate({input$text})
     )
     
