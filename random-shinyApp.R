@@ -2,7 +2,7 @@ library(shiny)
 
 ui <- fluidPage(
   titlePanel("Histogram of Random Normal Values"),
-  
+  wellPanel(
   sliderInput(
     inputId = "num",
     label = "Choose a number:",
@@ -16,12 +16,12 @@ ui <- fluidPage(
     label = "Change title?",
     value = "Histogram of Random Normal Values"
   ),
-  
+  "Histogram only works with this buttons: ",
   actionButton(inputId = "norm",
                label = "Normal"),
   
   actionButton(inputId = "unif",
-               label = "Uniform"),
+               label = "Uniform")),
   
   column(8, plotOutput("hist")),
   verbatimTextOutput("stats")
